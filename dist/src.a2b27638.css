@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'bigsnow';
+  src: url("BigSnow.f0b5af06.ttf"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2eb872ff;
+  text-align: center;
+  background-image: url("background.616e186d.svg");
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  position: relative; }
+
+.container {
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+  color: white;
+  font-family: bigsnow;
+  margin-top: 10px; }
+
+.countdown {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+  position: relative;
+  color: white;
+  font-family: bigsnow; }
+
+button {
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: white;
+  font-family: bigsnow; }
+
+.Boutons {
+  background-color: #fa4659ff;
+  border: 1px solid white;
+  box-shadow: 2px 2px 5px #3d3d3d;
+  border-radius: 10px 10px 10px 10px;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 2em; }
+
+#timer {
+  font-size: 3em; }
+
+.Modal {
+  background-image: url("background.616e186d.svg");
+  border: 1px solid white;
+  box-shadow: 2px 2px 5px #3d3d3d;
+  width: 40%;
+  height: 250px;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 25%;
+  margin-top: -25%;
+  padding: 50px;
+  position: absolute; }
+
+.Modal h2 {
+  font-family: bigsnow;
+  color: white;
+  font-weight: ligther;
+  font-size: 3em;
+  margin: 0 auto;
+  font-style: none; }
+
+.Modal button {
+  color: white;
+  font-size: 2em;
+  padding: 0 40px; }
