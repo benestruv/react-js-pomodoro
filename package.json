@@ -8,7 +8,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html -d docs --public-url ./"
   },
-  "homepage": "https://benestruv.github.io/react-js-pomodoro/",
+  "homepage": "https://benestruv.github.io/react-js-pomodoro",
   "dependencies": {
     "components": "^0.1.0",
     "node-sass": "^4.11.0",
@@ -24,5 +24,6 @@
     "gh-pages": "^2.0.1",
     "parcel": "^1.11.0"
   },
-  "keywords": []
+  "keywords": [],
+  "description": ""
 }
