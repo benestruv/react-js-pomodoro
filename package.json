@@ -8,16 +8,6 @@
     "start": "parcel index.html",
     "build": "parcel build index.html -d docs --public-url ./"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/benestruv/react-js-pomodoro.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/benestruv/react-js-pomodoro/issues"
-  },
   "homepage": "https://benestruv.github.io/react-js-pomodoro/",
   "dependencies": {
     "components": "^0.1.0",
@@ -31,5 +21,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "cssnano": "^4.1.8"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
