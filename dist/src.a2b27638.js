@@ -24482,7 +24482,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -24514,7 +24514,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -24549,12 +24549,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"public/scss/app.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel/src/builtins/bundle-url.js"}],"public/scss/app.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/BigSnow.ttf":[["BigSnow.f0b5af06.ttf","public/fonts/BigSnow.ttf"],"public/fonts/BigSnow.ttf"],"/home/benestruv/Desktop/react-js-pomodoro/public/img/background.svg":[["background.616e186d.svg","public/img/background.svg"],"public/img/background.svg"],"_css_loader":"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/img/tomato.svg":[function(require,module,exports) {
+},{"./../fonts/BigSnow.ttf":[["BigSnow.f0b5af06.ttf","public/fonts/BigSnow.ttf"],"public/fonts/BigSnow.ttf"],"/home/benestruv/Desktop/react-js-pomodoro/public/img/background.svg":[["background.616e186d.svg","public/img/background.svg"],"public/img/background.svg"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"public/img/tomato.svg":[function(require,module,exports) {
 module.exports = "/tomato.df6fe1af.svg";
 },{}],"src/components/Logo.js":[function(require,module,exports) {
 "use strict";
@@ -27128,7 +27128,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // Import des modules
 // Import des composants
 _reactDom.default.render(_react.default.createElement(_App.default, null), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./components/App":"src/components/App.js"}],"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./components/App":"src/components/App.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -27155,7 +27155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40451" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43483" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -27297,5 +27297,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
+},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","src/index.js"], null)
 //# sourceMappingURL=/src.a2b27638.map
