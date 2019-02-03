@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html -d docs --public-url ./"
+    "predeploy": "rm -rf dist && parcel build index.html --public-url react-js-pomodoro/",
+    "deploy": "gh-pages -d dist"
   },
   "homepage": "https://benestruv.github.io/react-js-pomodoro/",
   "dependencies": {
@@ -20,8 +21,9 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "cssnano": "^4.1.8"
+    "cssnano": "^4.1.8",
+    "gh-pages": "^2.0.1",
+    "parcel": "^1.11.0"
   },
-  "keywords": [],
-  "description": ""
+  "keywords": []
 }
