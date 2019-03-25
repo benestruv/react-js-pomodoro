@@ -24554,7 +24554,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/BigSnow.ttf":[["BigSnow.f0b5af06.ttf","public/fonts/BigSnow.ttf"],"public/fonts/BigSnow.ttf"],"/home/benestruv/Desktop/react-js-pomodoro/public/img/background.svg":[["background.616e186d.svg","public/img/background.svg"],"public/img/background.svg"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"public/img/tomato.svg":[function(require,module,exports) {
+},{"/home/benestruv/Desktop/BeCode/PROJECTS CLONES/react-js-pomodoro/public/img/background.svg":[["background.616e186d.svg","public/img/background.svg"],"public/img/background.svg"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"public/img/tomato.svg":[function(require,module,exports) {
 module.exports = "/tomato.df6fe1af.svg";
 },{}],"src/components/Logo.js":[function(require,module,exports) {
 "use strict";
@@ -27088,6 +27088,8 @@ function (_Component) {
     value: function render() {
       return _react.default.createElement("div", {
         className: "container"
+      }, _react.default.createElement("div", {
+        className: "compteur"
       }, _react.default.createElement(_Logo.default, {
         className: "logo"
       }), _react.default.createElement("div", {
@@ -27105,7 +27107,9 @@ function (_Component) {
         onClick: this.ToggleClick
       }), _react.default.createElement(_Increment.default, {
         onClick: this.Increment
-      })));
+      }))), _react.default.createElement("div", {
+        className: "Title"
+      }, _react.default.createElement("h1", null, "Pomodoro")));
     }
   }]);
 
@@ -27155,7 +27159,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43483" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33169" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

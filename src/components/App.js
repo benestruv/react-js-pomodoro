@@ -25,10 +25,8 @@ class App extends Component {
     this.ToggleClick = this.ToggleClick.bind(this);
     this.CloseModal = this.CloseModal.bind(this);
     this.RestartModal = this.RestartModal.bind(this);
-
-
-
 }
+
 // Affichage du timer :
     TimerDisplay(time) {
         let minutes = Math.floor(time / 60); // 1200 / 60 = 20 minutes
@@ -98,18 +96,23 @@ RestartModal(){
         return (
             <div className="container">
 
+                <div className="compteur">
+                    <Logo className="logo"/>
 
-                <Logo className="logo"/>
+                    <div id="timer">
+                        {this.TimerDisplay(this.state.time)}
+                    </div>
 
-                <div id="timer">
-                    {this.TimerDisplay(this.state.time)}
+                    <div className="Boutons">
+                        <Decrement onClick={this.Decrement} />
+                        {!this.state.time && (<Modal displayed={this.state.ModalHidden} onClickClose={this.CloseModal} onClickRestart={this.RestartModal} />)}
+                        <Toggle isToggleOn= {this.state.isToggleOn} onClick={this.ToggleClick} />
+                        <Increment onClick={this.Increment} />
+                    </div>
                 </div>
 
-                <div className="Boutons">
-                    <Decrement onClick={this.Decrement} />
-                    {!this.state.time && (<Modal displayed={this.state.ModalHidden} onClickClose={this.CloseModal} onClickRestart={this.RestartModal} />)}
-                    <Toggle isToggleOn= {this.state.isToggleOn} onClick={this.ToggleClick} />
-                    <Increment onClick={this.Increment} />
+                <div className="Title">
+                    <h1>Pomodoro</h1>
                 </div>
             </div>
         );
